@@ -29,6 +29,7 @@ async function getTickets(userId: number): Promise<Ticket> {
 
   return ticket;
 }
+export type ticketTypeIdInput = Pick<Ticket, 'ticketTypeId'>;
 
 const ticketsService = {
   allTickets,
